@@ -1,12 +1,42 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Hallo Welt</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-</head>
-<body>
-    <h1 class="box">Hallo Welt</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Bootstrap Beispiel{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col-md-8">
+    <h1 class="display-4 mb-4">Willkommen zu Bootstrap!</h1>
+    <p class="lead">Dies ist eine kleine Beispielseite mit Bootstrap-Komponenten.</p>
+    <hr>
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primär</button>
+    <button class="btn btn-success">Erfolg</button>
+    <button class="btn btn-danger">Gefahr</button>
+    <hr>
+    <h2>Alert</h2>
+    <div class="alert alert-warning" role="alert">
+      Dies ist eine Bootstrap-Warnung!
+    </div>
+    <hr>
+    <h2>Formular</h2>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email Adresse</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Wir geben Ihre Email niemals weiter.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Passwort</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary">Absenden</button>
+    </form>
+  </div>
+  <div class="col-md-4">
+    <h2>Seitenleiste</h2>
+    <ul class="list-group">
+      <li class="list-group-item active">Start</li>
+      <li class="list-group-item">Profil</li>
+      <li class="list-group-item">Einstellungen</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
