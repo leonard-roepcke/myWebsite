@@ -47,51 +47,84 @@
     </style>
 </head>
 <body>
-    <div class="container container-custom">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-            <div class="profile-section">
-                <img src="{% static 'images/leonard.jpg' %}" alt="Profilbild" class="profile-image" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
-                <h1 class="display-5 mb-1">Leonard Röpcke</h1>
-                <p class="lead text-muted">Programmierer</p>
-            </div>
-            </div>
-        </div>
 
+    <div class="container container-custom">
+        <!-- Profilbereich -->
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="content-block">
-                    <h2>Über mich</h2>
-                    <p>Hier kannst du etwas über dich selbst schreiben. Zum Beispiel deine Fähigkeiten, Interessen oder was du gerne machst. Halte es kurz und prägnant, passend zum minimalistischen Stil.</p>
+                <div class="profile-section">
+                    <img src="{% static 'images/leonard.jpg' %}" alt="Profilbild" class="profile-image" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
+                    <h1 class="display-5 mb-1">Leonard Röpcke</h1>
+                    <p class="lead text-muted">Softwareentwickler & Web Creator</p>
                 </div>
             </div>
         </div>
 
+        <!-- Über mich -->
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="content-block">
-                    <h2>Meine Projekte</h2>
-                    <p>Liste hier einige deiner Projekte auf. Du könntest Links zu GitHub oder Live-Demos hinzufügen. Jeder Absatz könnte ein separates Projekt beschreiben.</p>
+                    <h2>Über mich</h2>
+                    <p>Ich bin ein leidenschaftlicher Softwareentwickler mit Fokus auf moderne Webtechnologien, Design und Open Source. Minimalistisch. Offen. Neugierig.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fähigkeiten -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="content-block">
+                    <h2>Fähigkeiten</h2>
                     <ul>
-                        <li>Projekt 1: Eine kurze Beschreibung des Projekts.</li>
-                        <li>Projekt 2: Eine weitere kurze Beschreibung eines anderen Projekts.</li>
-                        <li>Projekt 3: Und noch ein Projekt.</li>
+                        <li>Python, Django, JavaScript, TypeScript</li>
+                        <li>HTML, CSS, Bootstrap, Tailwind</li>
+                        <li>Cloud & DevOps (Docker, CI/CD)</li>
+                        <li>UI/UX Design, Responsive Webdesign</li>
+                        <li>Open Source & Community</li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <!-- Projekte -->
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="content-block">
-                    <h2>Kontakt</h2>
-                    <p>Du kannst hier deine Kontaktinformationen angeben, wie z.B. deine E-Mail-Adresse oder Links zu sozialen Medien.</p>
-                    <p>E-Mail: <a href="mailto:deine.email@example.com">deine.email@example.com</a></p>
-                    <p>LinkedIn: <a href="#">Dein LinkedIn-Profil</a></p>
+                    <h2>Projekte</h2>
+                    <ul>
+                        <li><strong>Portfolio Website</strong> – <a href="https://github.com/leonardroepcke/portfolio" target="_blank">GitHub</a><br><span class="text-muted">Minimalistische persönliche Website mit Django & Bootstrap.</span></li>
+                        <li><strong>Open Source Beitrag</strong> – <a href="https://github.com/django/django" target="_blank">Django</a><br><span class="text-muted">Mitwirkung an der Django-Entwicklung.</span></li>
+                        <li><strong>Fotogalerie App</strong> – <a href="#" target="_blank">Live-Demo</a><br><span class="text-muted">Moderne Galerie mit Cloud-Upload und Sharing.</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
+        <!-- Erfahrung / Lebenslauf -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="content-block">
+                    <h2>Erfahrung</h2>
+                    <ul>
+                        <li><strong>2023–heute:</strong> Webentwickler bei <span class="text-muted">Tech Solutions GmbH</span></li>
+                        <li><strong>2021–2023:</strong> Werkstudent Softwareentwicklung, <span class="text-muted">Open Web AG</span></li>
+                        <li><strong>2018–2021:</strong> Informatik-Studium, <span class="text-muted">Universität Hamburg</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontakt -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="content-block">
+                    <h2>Kontakt</h2>
+                    <p>Du kannst mich gerne kontaktieren:</p>
+                    <p>E-Mail: <a href="mailto:leonard@example.com">leonard@example.com</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/leonardroepcke" target="_blank">Leonard Röpcke</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
