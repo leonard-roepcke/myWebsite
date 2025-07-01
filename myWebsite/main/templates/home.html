@@ -22,9 +22,12 @@
             padding: 30px;
             box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
             text-align: center;
-            margin-bottom: 40px; /* Abstand zu den Blöcken */
-            max-width: 600px; /* Maximale Breite für die Profilsektion */
             width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .profile-image {
             width: 150px;
@@ -39,7 +42,11 @@
             border-radius: 15px;
             padding: 30px;
             box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-            margin-bottom: 30px; /* Abstand zwischen den Blöcken */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .container-custom {
             max-width: 900px; /* Gesamte Breite des Inhalts */
@@ -54,14 +61,14 @@
         <!-- Profil & Über mich nebeneinander, dynamisch -->
         <div class="row g-4 justify-content-center align-items-stretch mb-4 flex-wrap">
             <div class="col-12 col-md-5 d-flex">
-                <div class="profile-section w-100 d-flex flex-column justify-content-center">
+                <div class="profile-section">
                     <img src="{% static 'images/leonard.jpg' %}" alt="Profilbild" class="profile-image" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
                     <h1 class="display-5 mb-1">Leonard Röpcke</h1>
                     <p class="lead text-muted">Softwareentwickler & Web Creator</p>
                 </div>
             </div>
             <div class="col-12 col-md-7 d-flex">
-                <div class="content-block w-100 d-flex flex-column justify-content-center">
+                <div class="content-block">
                     <h2>Über mich</h2>
                     <p>Ich bin ein leidenschaftlicher Softwareentwickler mit Fokus auf moderne Webtechnologien, Design und Open Source. Minimalistisch. Offen. Neugierig.</p>
                 </div>
@@ -94,10 +101,10 @@
             </div>
         </div>
 
-        <!-- Erfahrung / Lebenslauf -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="content-block">
+        <!-- Erfahrung & Kontakt nebeneinander, gleiche Höhe -->
+        <div class="row g-4 justify-content-center align-items-stretch mb-4 flex-wrap">
+            <div class="col-12 col-lg-6 d-flex">
+                <div class="content-block w-100 d-flex flex-column">
                     <h2>Erfahrung</h2>
                     <ul>
                         <li><strong>2023–heute:</strong> Webentwickler bei <span class="text-muted">Tech Solutions GmbH</span></li>
@@ -106,12 +113,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <!-- Kontakt -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="content-block">
+            <div class="col-12 col-lg-6 d-flex">
+                <div class="content-block w-100 d-flex flex-column">
                     <h2>Kontakt</h2>
                     <p>Du kannst mich gerne kontaktieren:</p>
                     <p>E-Mail: <a href="mailto:leonard@example.com">leonard@example.com</a></p>
