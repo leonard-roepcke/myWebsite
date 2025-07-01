@@ -48,32 +48,30 @@
 </head>
 <body>
 
+
+
     <div class="container container-custom">
-        <!-- Profilbereich -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="profile-section">
+        <!-- Profil & Über mich nebeneinander, dynamisch -->
+        <div class="row g-4 justify-content-center align-items-stretch mb-4 flex-wrap">
+            <div class="col-12 col-md-5 d-flex">
+                <div class="profile-section w-100 d-flex flex-column justify-content-center">
                     <img src="{% static 'images/leonard.jpg' %}" alt="Profilbild" class="profile-image" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
                     <h1 class="display-5 mb-1">Leonard Röpcke</h1>
                     <p class="lead text-muted">Softwareentwickler & Web Creator</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Über mich -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="content-block">
+            <div class="col-12 col-md-7 d-flex">
+                <div class="content-block w-100 d-flex flex-column justify-content-center">
                     <h2>Über mich</h2>
                     <p>Ich bin ein leidenschaftlicher Softwareentwickler mit Fokus auf moderne Webtechnologien, Design und Open Source. Minimalistisch. Offen. Neugierig.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Fähigkeiten -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="content-block">
+        <!-- Fähigkeiten & Projekte nebeneinander, dynamisch -->
+        <div class="row g-4 justify-content-center align-items-stretch mb-4 flex-wrap">
+            <div class="col-12 col-lg-6 d-flex">
+                <div class="content-block w-100">
                     <h2>Fähigkeiten</h2>
                     <ul>
                         <li>Python, Django, JavaScript, TypeScript</li>
@@ -84,12 +82,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <!-- Projekte -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="content-block">
+            <div class="col-12 col-lg-6 d-flex">
+                <div class="content-block w-100">
                     <h2>Projekte</h2>
                     <ul>
                         <li><strong>Portfolio Website</strong> – <a href="https://github.com/leonardroepcke/portfolio" target="_blank">GitHub</a><br><span class="text-muted">Minimalistische persönliche Website mit Django & Bootstrap.</span></li>
